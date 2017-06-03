@@ -34,10 +34,12 @@
   (unless (server-running-p) (server-start)))
 
 
+
 (setq MainOrgPath "/workspace/emacs/main/main.org")
 (setq MainOrg "main.org")
 
-(if (>= emacs-major-version 25)
-    (load-file "~/emacs/.emacs_mac_25")
-  (load-file "~/emacs/.emacs_mac"))
+(load-file "~/emacs/.emacs_spacemacs")
 
+;; (if (>= emacs-major-version 25)
+;;      (load-file "~/emacs/.emacs_mac_25")
+;;    (load-file "~/emacs/.emacs_mac"))
