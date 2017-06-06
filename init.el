@@ -39,5 +39,6 @@
 (setq MainOrg "main.org")
 (ido-mode 0)
 (helm-mode 0)
+(remove-hook 'python-mode-hook 'spacemacs//init-eldoc-python-mode)
 
 (load-file "~/emacs/.emacs_spacemacs")
