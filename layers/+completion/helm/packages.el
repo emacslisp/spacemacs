@@ -67,10 +67,10 @@
       (unless (configuration-layer/package-usedp 'ibuffer)
         (evil-ex-define-cmd "buffers" 'helm-buffers-list))
       ;; use helm by default for M-x, C-x C-f, and C-x b
-      (unless (configuration-layer/package-usedp 'smex)
-        (global-set-key (kbd "M-x") 'helm-M-x))
-      (global-set-key (kbd "C-x C-f") 'spacemacs/helm-find-files)
-      (global-set-key (kbd "C-x b") 'helm-buffers-list)
+;;      (unless (configuration-layer/package-usedp 'smex)
+;;        (global-set-key (kbd "M-x") 'helm-M-x))
+;;      (global-set-key (kbd "C-x C-f") 'spacemacs/helm-find-files)
+;;      (global-set-key (kbd "C-x b") 'helm-buffers-list)
       ;; use helm everywhere
       (spacemacs/set-leader-keys
         "<f1>" 'helm-apropos
